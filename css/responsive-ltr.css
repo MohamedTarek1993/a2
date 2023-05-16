@@ -1,0 +1,294 @@
+/* ---------------------------------------------------------media query------------------------------------------- */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1440px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1024.98px) {
+  /* navbar */
+  .navbar .navbar-collapse .navbar-nav {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+  .dropdown {
+    text-align: center;
+  }
+  .dropdown-menu.show {
+    /* right: 290px; */
+  }
+  .navbar .navbar-collapse .register_btn {
+    width: 35%;
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar .navbar-collapse .register_btn .first {
+    padding: 4%;
+    width: 65%;
+  }
+  /* navbar */
+
+  .common_anwser
+    .accordion
+    .accordion-item
+    .accordion-header
+    .accordion-button {
+    text-align: start;
+  }
+  .hero_section .content h1 {
+    font-size: 2rem;
+  }
+  .hero_section .content .button {
+    margin: 2rem 0;
+  }
+  .mensaa_section .img .shape2 {
+    left: -133px;
+  }
+  footer {
+    padding: 10% 0 2%;
+  }
+  footer .logo_footer .disc {
+    font-size: 0.8rem;
+  }
+  footer .important_links .adress {
+    font-size: 1rem;
+  }
+  footer .important_links ul li a {
+    font-size: 0.8rem;
+  }
+  .serveice_ti .sercice_cards .service_card p {
+    font-size: 0.9rem;
+  }
+  .subscribe_section .suscripe_form form .input-group .btn {
+    width: 27%;
+    bottom: 11px;
+  }
+  .side_bar .sidebar_widgets .input-group .icon {
+    width: 18%;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .dropdown-menu.show {
+    right: 290px;
+  }
+  .navbar .navbar-collapse .register_btn::before {
+    display: none;
+  }
+  .navbar .navbar-collapse .register_btn {
+    width: 100%;
+  }
+  .navbar .navbar-collapse .register_btn .first {
+    padding: 1%;
+    width: 22%;
+  }
+  .hero_section .content {
+    text-align: center;
+    padding-inline-end: 0%;
+  }
+  .hero_section .content .button {
+    justify-content: center;
+  }
+  .hero_section .img {
+    height: 370px;
+    text-align: center;
+  }
+  .hero_section .img img {
+    width: 53%;
+  }
+  .counter_section .boxes .box {
+    justify-content: center;
+    margin-bottom: 3%;
+  }
+  .mensaa_section .img .shape2,
+  .mensaa_section .img .shape1,
+  .mensaa_section .img .shape3 {
+    display: none;
+  }
+  .mensaa_section .img {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 4%;
+  }
+  .sec_title {
+    padding: 2% 10%;
+  }
+  .last_news .last_box {
+    height: unset;
+    margin-bottom: 9%;
+  }
+  .last_news .last_box .img {
+    /* height: 199px; */
+  }
+  .button {
+    margin: 2% 0;
+  }
+  .join_us .main_title {
+    padding-top: 58px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .join_us .button {
+    margin-top: 3%;
+    justify-content: center;
+  }
+  .join_us .img {
+    justify-content: center;
+    padding-top: 0px;
+  }
+  .last_news .last_box .text {
+    text-align: center;
+  }
+  footer .important_links ul li {
+    margin-bottom: 2%;
+  }
+  footer .important_links .adress {
+    text-align: center;
+  }
+  footer .important_links ul {
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo_footer {
+    align-items: center;
+  }
+  footer .logo_footer .disc {
+    text-align: center;
+  }
+  .app_section .app {
+    padding: 34px 34px;
+  }
+  .app_section .app .app_image {
+    position: absolute;
+    right: -16px;
+    bottom: -51px;
+    height: 400px;
+    width: 50%;
+  }
+  .main_title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .serveice_ti .sercice_cards .service_card h6 {
+    font-size: 0.9rem;
+  }
+  .serveice_ti .sercice_cards .service_card {
+    height: 250px;
+    width: 45%;
+    margin-bottom: 3%;
+  }
+  .adventages_courses .main_title {
+    padding-top: 8%;
+  }
+  .subscribe_section .suscripe_form form .input-group .btn {
+    bottom: 18px;
+  }
+  .side_bar .sidebar_widgets .input-group .icon {
+    width: 25%;
+  }
+  .edu_person_info p {
+    -webkit-line-clamp: 10;
+  }
+  .signin .img {
+    display: none;
+  }
+  .testmonies_section .swiper .swiper-slide .head .img {
+    transform: translateY(8px);
+  }
+  .side_bar {
+    width: 60%;
+    margin: auto;
+}
+.contact_us .contact_info .content {
+  margin-bottom: 3%;
+}
+}
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767.98px) {
+  .dropdown-menu.show {
+    right: 145px;
+  }
+}
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 425px) {
+  .dropdown-menu.show {
+    /* right: 145px; */
+  }
+  .hero_section .content p {
+    padding-inline-end: 0%;
+  }
+  .hero_section .img img {
+    width: 81%;
+  }
+  .mensaa_section .img {
+    height: 360px;
+  }
+  .app_section .app .app_image {
+    display: none;
+  }
+  .join_us .img img {
+    width: 100%;
+  }
+  .subscribe_section {
+    transform: translateY(0px);
+  }
+  .subscribe_section .suscripe_form form .input-group .btn {
+    width: 35%;
+    bottom: 12px;
+    right: 7px;
+    font-size: 0.8rem;
+  }
+  footer .logo_footer .disc {
+    padding-inline-end: 0%;
+  }
+  .lower_footer .slug {
+    width: 100%;
+    text-align: center;
+  }
+  .lower_footer ul {
+    width: 100%;
+    justify-content: center;
+  }
+  .serveice_ti .sercice_cards .service_card {
+    width: 100%;
+    height: unset;
+    margin-bottom: 2%;
+  }
+  .adventages_courses .mansaa_cards .mansaa_card {
+    width: 100%;
+  }
+  .adventages_courses .mansaa_cards .mansaa_card:nth-child(even) {
+    transform: translateY(0px);
+  }
+  .testmonies_section .swiper .swiper-slide .head .img {
+    transform: translateY(-9px);
+  }
+  .education_section .tabs_ed li {
+    width: 97%;
+    margin-bottom: 6%;
+    font-size: 1rem;
+  }
+  .header .text h2 {
+    font-size: 2rem;
+  }
+  .header .text ul li a {
+    font-size: 1rem;
+  }
+  .header .text ul {
+    align-items: center;
+  }
+  .header .text ul li i {
+    font-size: 1rem;
+  }
+  .edu_person_info p {
+    margin-top: 6%;
+  }
+  .single_blog .content {
+    padding: 2% 34px;
+  }
+}
