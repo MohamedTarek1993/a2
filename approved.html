@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> تأكيد</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="scss/main.min.css" />
+    <!-- for ltr lang -->
+    <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+    <!-- main css -->
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/responsive-ltr.css"> -->
+    <!-- for ltr lang responsive -->
+    <!-- responsive -->
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper-demos.css">
+    <!-- swiper -->
+    <!-- animation -->
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <!-- animation -->
+    <!-- ? Favicon -->
+    <link rel="icon" href="./image/logo.png" type="image" />
+    <!-- ? Favicon -->
+</head>
+
+<body>
+
+    <!---------------------- start loader -------------------------------------------->
+    <!-- <div id="preloader"></div> -->
+    <!---------------------- finish loader -------------------------------------------->
+    <!---------------------- start scroll-up -------------------------------------------->
+    <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+    <!---------------------- finish scroll-up -------------------------------------------->
+
+
+    <!-- =========== ? NavBar =========== -->
+    <nav class="navbar home navbar-expand-lg" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"> من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eduction.html"> المحتوي التعليمي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">الأخبار </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"> تواصل معنا </a>
+                    </li>
+                </ul>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#"> العربية</a></li>
+                    </ul>
+                </div>
+                <div class="register_btn button">
+                    <a href="sign.html" class="btn first"> تسجيل دخول</a>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- =========== ? NavBar =========== -->
+
+    <section class="confirm_sec">
+        <div class="container">
+            <div class="row justify-content-center align-content-center">
+                <div class="col-lg-9 col-12 justify-content-center align-content-center">
+                    <div class="img">
+                        <img src="image/ok.png" alt="clock">
+                    </div>
+                    <div class="sec_title">
+                        <h2>تم قبول طلب الانضمام الى المنصة بعد مراجعة البيانات</h2>
+                        <p>تم مراجعة البيانات الخاصة بك من قبل الادراة المسئولة وتم قبول طلبك بالانضمام الى المنصة ,
+                            يتبقي خطوة واحدة وهى اختيار الباقات المناسبة لك</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                أوافق على
+
+                                <a target="_blank" href="terms.html"> الشروط والاحكام</a>
+                            </label>
+                        </div>
+                        <div class="button w-100">
+                            <a href="package.html" class="btn first w-50 disabled" id="subscriptionButton" >عرض باقات
+                                الاشتراك</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- main js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- main js -->
+    <!-- swiper -->
+    <script src="js/swiper-demos.js"></script>
+    <!-- swiper -->
+    <!-- animation -->
+    <script src="js/aos-anmite.js"></script>
+    <script>
+        AOS.init({
+            disable: function () {
+                var maxWidth = 700;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
+
+    <!-- diseable eanble button -->
+    <script>
+     const checkbox = document.getElementById("flexCheckDefault");
+const button = document.getElementById("subscriptionButton");
+
+checkbox.addEventListener("change", function() {
+    if (this.checked) {
+        button.disabled = false;
+        button.classList.remove("disabled");
+    } else {
+        button.disabled = true;
+        button.classList.add("disabled");
+    }
+});
+
+    </script>
+
+
+</body>
+
+</html>
