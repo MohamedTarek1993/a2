@@ -226,7 +226,7 @@ p {
 
 .header {
   position: relative;
-
+margin-top: 6%;
   img {
     width: 100%;
     height: 250px;
@@ -606,7 +606,7 @@ input {
     align-items: center;
     justify-content: center;
     text-align: center; */
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-white);
   width: 1.8em !important;
   height: 1.8em !important;
   padding: 0 7px 2px 7px !important;
@@ -626,7 +626,7 @@ input {
   /* padding: 0 0 0 0.15em !important; */
   display: flex;
   background-image: none;
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
   position: absolute !important;
   transition: all 0.2s ease-in;
 }
@@ -772,12 +772,18 @@ input {
 //start nav bar
 
 .navbar {
-  background-color: var(--color-white);
+  background-color: var(--color-primary);
   transition: 0.25s all ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 2%;
+  z-index: 100;
+
 
   .navbar-brand {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 
     img {
       width: 100%;
@@ -786,9 +792,10 @@ input {
   }
 
   .navbar-collapse {
+    justify-content: end;
     .navbar-nav {
       width: 66%;
-      justify-content: center;
+      justify-content: end;
 
       .nav-item {
         transition: 0.35s all ease-in;
@@ -797,7 +804,7 @@ input {
         .nav-link {
           font-size: 1rem;
           font-family: "regular";
-          color: var(--color-text);
+          color: var(--color-white);
           padding-left: 1rem;
           padding-right: 1rem;
           position: relative;
@@ -813,7 +820,7 @@ input {
 
       .nav-item {
         .nav-link.active {
-          color: var(--color-primary);
+          color: var(--color-secound);
           font-family: "bold";
           transition: 0.25s all ease-in-out;
 
@@ -824,53 +831,45 @@ input {
       }
     }
 
-    .account_btn {
-      width: 17%;
-      margin-top: 0;
 
-      .first {
-        padding: 3% 4%;
-        font-size: 0.8rem;
-        font-family: "regular";
-        border-radius: 0;
-        background-color: var(--color-white);
-        color: var(--color-primary);
-        border: 1px solid var(--color-primary);
-      }
-    }
 
     .register_btn {
       width: 17%;
       margin: 0;
       position: relative;
 
-      &::before {
-        content: '';
-        top: 5px;
-        right: 0;
-        position: absolute;
-        width: 2px;
-        height: 30px;
-        color: rgba($color: #9A9A9A, $alpha: 0.65);
-        background-color: rgba($color: #9A9A9A, $alpha: 0.65);
-      }
 
       .first {
         padding: 5% 14%;
         font-size: 0.8rem;
         font-family: "regular";
-        border-radius: 0;
         border-radius: 5px;
+        background-color: var(--color-secound);
+        transition: .25s all ease-in-out;
+        border: 1px solid var(--color-secound);
+
+        &:hover {
+          background-color: transparent;
+          color: var(--color-secound);
+        }
       }
     }
 
     .dropdown {
       .dropdown-toggle {
         background-color: transparent;
-        border: none;
-        font-size: 1rem;
+        border: 1px solid var(--color-white);
+        border-radius: 50%;
+        font-size: .7rem;
         font-family: "regular";
-        color: var(--color-text);
+        color: var(--color-white);
+        width: 34px;
+        height: 34px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .dropdown-menu {
@@ -888,6 +887,7 @@ input {
 
 .navbar.change {
   background-color: rgba($color: #10222e, $alpha: 0.8);
+  z-index: 100;
 
   .navbar-nav {
     width: 100%;
@@ -909,6 +909,7 @@ input {
 .hero_section {
   position: relative;
   padding: 5% 0 0;
+  margin-top: 5%;
 
   .content {
     text-align: start;
@@ -1552,7 +1553,7 @@ input {
 // blog page
 .blogs_section {
   padding: 30px 0;
-
+margin-top: 5%;
   .card_blog {
     display: flex;
     flex-direction: column;
@@ -1909,6 +1910,7 @@ input {
 
 .contact_us {
   padding: 50px 0;
+  margin-top: 5%;
 
   h2 {
     margin-bottom: 1%;
@@ -2071,7 +2073,7 @@ input {
         width: 35%;
 
         h4 {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           color: var(--color-text);
           font-family: 'bold';
         }
@@ -2676,7 +2678,8 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     width: 50%;
-    margin-top: 3%;
+    padding-top: 6%;
+    padding-bottom: 6%;
 
     li {
       padding-inline-start: 1%;
@@ -2690,12 +2693,12 @@ footer {
       justify-content: center;
       align-items: center;
       transition: .25s all ease-in-out;
-      &:hover{
+
+      &:hover {
         background-color: var(--color-secound);
-        a{
-          i{
-            
-          }
+
+        a {
+          i {}
         }
       }
 
@@ -2740,21 +2743,24 @@ footer {
 
     .adress {
       font-size: 1.3rem;
-      color: var(--color-text);
+      color: var(--color-white);
       font-family: "bold";
+      text-align: start;
     }
 
     ul {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: start;
+      flex-wrap: wrap;
       padding-top: 5%;
 
       li {
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+        width: 45%;
 
         a {
-          color: var(--color-text);
+          color: var(--color-white);
           font-family: "regular";
           font-size: 1rem;
         }
@@ -2763,45 +2769,87 @@ footer {
   }
 
   .app {
-    padding-top: 4%;
+    padding-top: 8%;
     text-align: center;
 
-    .app_button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column;
-      padding-top: 5%;
+    p {
+      font-size: 1rem;
+      color: var(--color-white);
+      font-family: 'light';
+      text-align: start;
+      padding: 5% 0 3%;
+    }
 
-      a {
-        margin-bottom: 3%;
+    form.subsceibe {
+      margin: 3% 0;
 
-        img {
-          width: 81%;
+      .input-group {
+        position: relative;
+
+        .form-control {
+          width: 100%;
+
+          &::placeholder {
+            color: var(--color-white);
+          }
+        }
+
+        .icon {
+          position: absolute;
+          left: 2%;
+          top: 5px;
+          z-index: 100;
+
+          i {
+            color: var(--color-white);
+            font-size: 1.2rem;
+          }
+        }
+
+        .btn {
+          background-color: var(--color-white);
+          color: var(--color-primary);
+          font-size: 1rem;
+          font-family: 'regular';
+          margin-top: 3%;
+          border-radius: 8px !important;
+          transition: .25s all ease-in-out;
+          border: 1px solid var(--color-white);
+
+          &:hover {
+            background-color: transparent;
+            color: var(--color-white);
+          }
         }
       }
     }
+
   }
 }
 
 .lower_footer {
   border-top: 1px solid var(--color-pargraph);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding: 1% 5%;
-  background-color: #F6F9FC;
+  background-color: var(--color-primary);
 
   .slug {
     text-align: start;
-    width: 50%;
 
     p {
       font-size: 1rem;
-      font-family: "regular";
-      color: var(--color-pargraph);
+      font-family: "light";
+      color: #CFDBE2;
+    }
+  }
+
+  .copy_right {
+
+    p,
+    a {
+      text-align: end;
+      color: var(--color-white);
+      font-size: 1rem;
+      font-family: 'regular';
     }
   }
 

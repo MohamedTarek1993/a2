@@ -29,7 +29,7 @@
     <!-- ? Favicon -->
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!---------------------- start loader -------------------------------------------->
     <!-- <div id="preloader"></div> -->
     <!---------------------- finish loader -------------------------------------------->
@@ -54,29 +54,33 @@
                         <a class="nav-link" href="index.html">الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="companies.html"> للشركات</a>
+                        <a aria-current="page" href="#scrollspyAbout" class="nav-link"> نبذة عنا</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="recruitment.html">للتوظيف </a>
+                        <a class="nav-link" href="#scrollspyService">خدماتنا </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">آخر الأخبار </a>
 
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html"> تواصل معنا </a>
                     </li>
                 </ul>
-
+                <div class="register_btn button">
+                    <a href="team-contact.html" class="btn first"> انضم الآن</a>
+                </div>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        English
+                        En
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#"> العربية</a></li>
+                        <li><a class="dropdown-item" href="#"> Ar</a></li>
                     </ul>
                 </div>
-                <div class="register_btn button">
-                    <a href="login.html" class="btn first"> تسجيل دخول</a>
-                </div>
+
 
 
             </div>
@@ -96,7 +100,7 @@
                         <p>نحن منصة تعليمية متميزة لخدمة الطلاب والمعلمين من خلال خدمات مميزة جدا لكل منهم ,نحن نسعى
                             جاهدين الى تقدم تكنولوجي وتقني بأحدث الاساليب الممكنة</p>
                         <div class="button">
-                            <a href="register-company.html" class="first btn"> انضم الآن</a>
+                            <a href="team-contact.html" class="first btn"> انضم الآن</a>
                         </div>
                         <div class="join_us_hero">
                             <div class="img">
@@ -203,7 +207,7 @@
     </section>
     <!---------------------- finish hero section -------------------------------------------->
     <!---------------------- start abouts section -------------------------------------------->
-    <section class="about_us_section">
+    <section class="about_us_section" id="scrollspyAbout">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-12" data-aos="fade-left" data-aos-duration="3000">
@@ -286,7 +290,7 @@
                     <p>يمكنك التواصل معنا من خلال الزر الموجود وتوضيح كل المميزات التي ستحصل عليها من قبل المنصة</p>
                 </div>
                 <div class="button">
-                    <a href="#" class="btn first"> انضم الآن </a>
+                    <a href="contact.html" class="btn first"> انضم الآن </a>
                 </div>
             </div>
         </div>
@@ -294,7 +298,7 @@
 
     <!---------------------- finish why section -------------------------------------------->
     <!---------------------- start notes section -------------------------------------------->
-    <section class="notes_section">
+    <section class="notes_section" id="scrollspyService">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-12">
@@ -343,7 +347,7 @@
                         <p>نحن منصة تعليمية متميزة لخدمة الطلاب والمعلمين من خلال خدمات مميزة جدا لكل منهم ,نحن نسعى
                             جاهدين الى تقدم تكنولوجي </p>
                         <div class="button">
-                            <a href="#" class="btn first">انضم الآن</a>
+                            <a href="contact.html" class="btn first">انضم الآن</a>
                         </div>
                     </div>
                 </div>
@@ -432,7 +436,7 @@
                             عمل متميز ومتعاون ويشرفنا انضمامك الينا</p>
                     </div>
                     <div class="button">
-                        <a href="#" class="btn first">انضم الآن</a>
+                        <a href="team-contact.html" class="btn first">انضم الآن</a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-12">
@@ -522,325 +526,12 @@
     <!---------------------- finish faq section -------------------------------------------->
 
 
-    <!---------------------- start printer in success-------------------------------------------->
-    <!-- <section class="printer_section" data-aos="fade-up" data-aos-duration="3000">
-        <div class="container">
-            <div class="main_title">
-                <h2>الشركات الموثوق بهم</h2>
-                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
-                    يمكنك أن تولد مثل هذا النص .</p>
-            </div>
-            <div class="printer">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="img">
-                                <img src="image/printer1.png" alt="client">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="img">
-                                <img src="image/printer2.png" alt="client">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="img">
-                                <img src="image/printer3.png" alt="client">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="img">
-                                <img src="image/printer4.png" alt="client">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="img">
-                                <img src="image/printer5.png" alt="client">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="img">
-                                <img src="image/printer6.png" alt="client">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section> -->
-    <!---------------------- finish printer in success -------------------------------------------->
-    <!---------------------- start service -------------------------------------------->
-    <!-- <section class="service_section" data-aos="fade-up" data-aos-duration="3000">
-        <div class="container">
-            <div class="main_title">
-                <span>خدماتنا</span>
-                <h2>شعارنا هو النجاح
-                    و هذا الذي يجعلنا دائما في المقدمة </h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-12">
-                    <div class="content">
-                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_lqge6px5.json"
-                            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
-                        </lottie-player>
-                        <h4>فرص عمل متاحة</h4>
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                            الحروف التى يولدها التطبيق.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-12">
-                    <div class="content">
-                        <lottie-player src="https://assets3.lottiefiles.com/datafiles/6WfDdm3ooQTEs1L/data.json"
-                            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
-                        </lottie-player>
-                        <h4>توفير فرص عمل حر</h4>
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                            الحروف التى يولدها التطبيق.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-12">
-                    <div class="content">
-                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_vyfhyz2a.json"
-                            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
-                        </lottie-player>
-                        <h4>توظيف متاح للشركات</h4>
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
-                            الحروف التى يولدها التطبيق.</p>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </section> -->
-    <!---------------------- finish service -------------------------------------------->
-
-    <!---------------------- start counter -------------------------------------------->
-    <!-- <section class="counter_section" id="counter_section"
-        style="background: url(./image/back2.png) fixed; background-size: cover;background-position: center;">
-        <div class="container">
-            <div class="boxes row" data-aos="fade-up" data-aos-duration="3000">
-                <div class="box col-lg-3 col-md-6 col-12">
-                    <div class="counter" data-target="200">200 </div>
-                    <h5 class="head-categ"> عدد الوظائف المتاحة</h5>
-                </div>
-                <div class="box col-lg-3 col-md-6 col-12">
-                    <div class="counter" data-target="400">400 </div>
-                    <span class="head-categ"> عدد العاملين لدينا</span>
-                </div>
-                <div class="box col-lg-3 col-md-6 col-12">
-                    <div class="counter" data-target="600"> 600 </div>
-                    <span class="head-categ"> ساعة عمل تم تغطيتها</span>
-                </div>
-
-                <div class="box col-lg-3 col-md-6 col-12">
-                    <div class="counter" data-target="600"> 600 </div>
-                    <span class="head-categ"> مدربين وجاهزين للتوظيف </span>
-
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!---------------------- finish counter -------------------------------------------->
-    <!---------------------- start search service -------------------------------------------->
-    <!-- <section class="service_search" data-aos="fade-up" data-aos-duration="3000">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="main_title">
-                        <span>خاص للشركات</span>
-                        <h2> خدمه خاصه بالشركات الباحثة عن
-                            موظفين </h2>
-                        <P>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
-                            التى يولدها التطبيق.</P>
-                    </div>
-                    <div class="title">
-                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
-                        حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
-                        التطبيق.
-                    </div>
-                    <ul>
-                        <li>جدولة فرص العمل</li>
-                        <li>الدفع للموظفين مرن</li>
-                        <li>متابعة الحضور</li>
-                        <li>جميع وظائفك متوفرة لدينا </li>
-                        <li>تقييم الجوده</li>
-                        <li>باقتك على كيفك</li>
-                    </ul>
-                    <div class="button">
-                        <a href="login.html" class="first btn">انضم الينا الآن</a>
-                        <a href="companies.html" class="second btn">اعرف المزيد <i class="bi bi-arrow-left-short"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="img">
-                        <img src="image/search.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!---------------------- finish search service -------------------------------------------->
-    <!---------------------- start your job -------------------------------------------->
-    <!-- <section class="your_job" data-aos="fade-up" data-aos-duration="3000">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="img">
-                        <img src="image/your job.png" alt="your job">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="main_title">
-                        <span>خاص للتوظيف</span>
-                        <h2>وظيفتك لدي كاش شيفت اصبحت اكثر سهولة </h2>
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى،
-                            حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى
-                            يولدها
-                            التطبيق.</p>
-                    </div>
-                    <div class="boxes">
-                        <div class="box">
-                            <h4>توظيفك عندنا</h4>
-                            <p>وظيفتك عندنا .. اطلب و هننفذ طلبك</p>
-                        </div>
-                        <div class="box">
-                            <h4>دوامك علي كيفك</h4>
-                            <p>متووفر لدينا دوام جزئي و كلي و متقطع</p>
-                        </div>
-                        <div class="box">
-                            <h4>طور مهاراتك</h4>
-                            <p>اختار عملك الحر و طور من مهاراتك</p>
-                        </div>
-                    </div>
-                    <div class="button">
-                        <a href="#" class="btn second">اعرف المزيد <i class="bi bi-arrow-left-short"></i></a>
-                    </div>
-                    <div class="app_button">
-                        <a href="#" class="btn" target="__blank"> <img src="image/google.png" alt="google"> </a>
-                        <a href="#" class="btn" target="__blank"> <img src="image/app.png" alt="appel"> </a>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!---------------------- finish your job -------------------------------------------->
-    <!---------------------- start success story -------------------------------------------->
-
-    <!-- <section class="success_story" data-aos="fade-up" data-aos-duration="3000">
-        <div class="container">
-            <div class="main_title">
-                <span> قصص النجاح</span>
-                <h2>نحن نهتم بقصص نجاح عملائنا من خلال تجربتهم لنا</h2>
-            </div>
-            <div class="swiper mySwiper_1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="head">
-                            <div class="text">
-                                <img src="image/person1.png" alt="">
-                                <div class="desc">
-                                    <h6>احمد فتحي</h6>
-                                    <span>مهندس مدني</span>
-                                </div>
-                            </div>
-                            <div class="img">
-                                <img src="image/quate.png" alt="">
-                            </div>
-                        </div>
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيا</p>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="head">
-                            <div class="text">
-                                <img src="image/person1.png" alt="">
-                                <div class="desc">
-                                    <h6>احمد فتحي</h6>
-                                    <span>مهندس مدني</span>
-                                </div>
-                            </div>
-                            <div class="img">
-                                <img src="image/quate.png" alt="">
-                            </div>
-                        </div>
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيا</p>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="head">
-                            <div class="text">
-                                <img src="image/person1.png" alt="">
-                                <div class="desc">
-                                    <h6>احمد فتحي</h6>
-                                    <span>مهندس مدني</span>
-                                </div>
-                            </div>
-                            <div class="img">
-                                <img src="image/quate.png" alt="">
-                            </div>
-                        </div>
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيا</p>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="head">
-                            <div class="text">
-                                <img src="image/person1.png" alt="">
-                                <div class="desc">
-                                    <h6>احمد فتحي</h6>
-                                    <span>مهندس مدني</span>
-                                </div>
-                            </div>
-                            <div class="img">
-                                <img src="image/quate.png" alt="">
-                            </div>
-                        </div>
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيا</p>
-                    </div>
-
-                </div>
-                <div class="swiper-pagination"></div>
-
-            </div>
-        </div>
-    </section> -->
-    <!---------------------- finish success story -------------------------------------------->
-    <!---------------------- start subscribe  -------------------------------------------->
-    <!-- <section class="subscribe_section" data-aos="fade-up" data-aos-duration="3000">
-        <div class="container">
-            <div class="content">
-                <div class="main_title">
-                    <h2>كن علي اتصال معنا</h2>
-                    <p>اعرف اخر الأخبار الخاصة بنا</p>
-                </div>
-                <form action="">
-                    <div class="input-group mb-3">
-                        <input class="form-control" type="email" name="email" id="email" required
-                            placeholder="ادخل البريد الالكتروني" aria-describedby="button-addon1">
-                        <button class="btn " type="button" id="button-addon1">ابدأ الان</button>
-                        <span class="icon_subscripe"><i class="bi bi-envelope"></i></span>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section> -->
-    <!---------------------- finish subscribe -------------------------------------------->
     <!---------------------- start footer  -------------------------------------------->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4  col-12">
                     <div class="logo_footer">
                         <img src="image/footer-logo.png" alt="logo footer">
                         <p class="disc">
@@ -858,76 +549,87 @@
 
 
                 </div>
-                <div class="col-lg-2 col-md-6 col-12">
+                <div class="col-lg-4 col-md-12 col-12">
                     <div class="important_links">
-                        <h4 class="adress">منصة كاش شيفت</h4>
+                        <h4 class="adress">روابط سريعة </h4>
                         <ul>
-                            <li><a href="index.html"> الرئيسية</a></li>
-                            <li><a href="companies.html"> للشركات</a></li>
-                            <li><a href="recruitment.html"> للتوظيف</a></li>
-                            <li><a href="contact.html"> اتصل بنا</a></li>
+                            <li><a href="index.html"> نبذه عنا</a></li>
+                            <li><a href="team-contact.html"> الانضمام كطالب</a></li>
+                            <li><a href="index.html"> خدماتنا</a></li>
+                            <li><a href="team-contact.html"> الانضمام كمعلم</a></li>
+                            <li><a href="blog.html"> اخر الاخبار</a></li>
+                            <li><a href="terms.html"> الأسألة الشائعة</a></li>
+                            <li><a href="contact.html"> تواصل معنا</a></li>
                         </ul>
                     </div>
 
                 </div>
-                <div class="col-lg-2 col-md-6 col-12">
-                    <div class="important_links">
-                        <h4 class="adress"> لينكات سريعة </h4>
-                        <ul>
-                            <li><a href="privacy.html"> سياسة الخصوصية</a></li>
-                            <li><a href="terms.html"> الشروط والأحكام</a></li>
-                            <li><a href="common-anwser.html"> الاسألة الشائعة</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
+
+                <div class="col-lg-4 col-12">
                     <div class="important_links app">
-                        <h4 class="adress"> تحميل التطبيق </h4>
-                        <div class="app_button">
-                            <a href="#" target="__blank"> <img src="image/app2.png" alt=""></a>
-                            <a href="#" target="__blank"> <img src="image/google2.png" alt=""></a>
-                        </div>
+                        <h4 class="adress"> ابقي على تواصل معنا </h4>
+                        <p>ادخل بريدك الالكترونى حتي يصلك كل جديد لدينا ومتابعة احدث الاخبار</p>
+                        <form class="subsceibe" action="">
+                            <div class="input-group">
+                                <input class="form-control" type="email" placeholder="البريد الالكتروني" name="" id="">
+                                <span class="icon"><i class="bi bi-envelope"></i></span>
+                                <button class="btn"> اشترك الآن</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    < <div class="lower_footer">
-
-        <div class="slug">
-            <p>كل الحقوق محفوظة @ منصة كاشيفت 2022</p>
+    <div class="lower_footer">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="slug">
+                    <p>كل الحقوق محفوظة@ اسم الموقع 2023</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="copy_right">
+                    <p>Made With by
+                        <a href="#">
+                            Crazy Idea
+                        </a>
+                    </p>
+                </div>
+            </div>
         </div>
 
 
-        </div>
 
-        <!---------------------- finish footer -------------------------------------------->
+    </div>
 
-        <!-- main js -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="js/main.js"></script>
-        <!-- main js -->
-        <!-- swiper -->
-        <script src="js/swiper-demos.js"></script>
-        <!-- swiper -->
-        <!-- animation -->
-        <script src="js/aos-anmite.js"></script>
-        <script>
-            AOS.init({
-                disable: function () {
-                    var maxWidth = 700;
-                    return window.innerWidth < maxWidth;
-                }
-            });
-        </script>
-        <!-- animation -->
-        <!-- lottie -->
-        <!-- lottie -->
+    <!---------------------- finish footer -------------------------------------------->
+
+    <!-- main js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- main js -->
+    <!-- swiper -->
+    <script src="js/swiper-demos.js"></script>
+    <!-- swiper -->
+    <!-- animation -->
+    <script src="js/aos-anmite.js"></script>
+    <script>
+        AOS.init({
+            disable: function () {
+                var maxWidth = 991;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
+    <!-- animation -->
+    <!-- lottie -->
+    <!-- lottie -->
 
 
-        <!-- printer in success slider -->
-        <!-- <script>
+    <!-- printer in success slider -->
+    <!-- <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 5,
             spaceBetween: 10,
@@ -952,10 +654,10 @@
             },
         });
     </script> -->
-        <!-- printer in success slider -->
+    <!-- printer in success slider -->
 
-        <!--  success story slider -->
-        <!-- <script>
+    <!--  success story slider -->
+    <!-- <script>
         var swiper = new Swiper(".mySwiper_1", {
             slidesPerView: 3,
             spaceBetween: 10,
@@ -984,18 +686,18 @@
             },
         });
     </script> -->
-        <!-- success story  slider -->
-        </script>
-        <script src="js/counterup.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script>
-            $('.counter').counterUp({
-                delay: 20,
-                time: 3000
-            });
-        </script>
+    <!-- success story  slider -->
+    </script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script>
+        $('.counter').counterUp({
+            delay: 20,
+            time: 3000
+        });
+    </script>
 
-        <!-- counter -->
+    <!-- counter -->
 
 
 </body>

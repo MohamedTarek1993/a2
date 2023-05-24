@@ -6,16 +6,16 @@
 //loader
 //  scroll-up 
 var btn = $('#button');
-var image = $('.navbar-light .navbar-brand img');
-var link = $('.navbar-light .nav-item .nav-link');
+var image = $('.navbar .navbar-brand img');
+var link = $('.navbar .nav-item .nav-link');
 $(window).scroll(function () {
   if ($(window).scrollTop() > 100) {
     btn.addClass('show');
-    image.css('width', '50%');
+    // image.css('width', '50%');
     link.addClass('change');
   } else {
     btn.removeClass('show');
-    image.css('width', '70%');
+    // image.css('width', '70%');
     link.removeClass('change');
   }
 });
