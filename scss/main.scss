@@ -226,7 +226,8 @@ p {
 
 .header {
   position: relative;
-margin-top: 6%;
+  margin-top: 6%;
+
   img {
     width: 100%;
     height: 250px;
@@ -793,6 +794,7 @@ input {
 
   .navbar-collapse {
     justify-content: end;
+
     .navbar-nav {
       width: 66%;
       justify-content: end;
@@ -1553,7 +1555,8 @@ input {
 // blog page
 .blogs_section {
   padding: 30px 0;
-margin-top: 5%;
+  margin-top: 5%;
+
   .card_blog {
     display: flex;
     flex-direction: column;
@@ -2300,7 +2303,84 @@ margin-top: 5%;
 
 // package 
 
+//prenter sec
+.printer_section {
+  padding: 3% 0 0;
 
+  .swiper {
+    width: 100%;
+    height: 450px;
+
+    .swiper-slide {
+      height: 430px;
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      background: transparent;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: start;
+      justify-content: flex-start;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -webkit-align-items: start;
+      align-items: flex-start;
+      padding: 2%;
+      flex-direction: column;
+
+      .pranter_card {
+        .img {
+          width: 100%;
+          height: 200px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .title {
+          font-size: 1.3rem;
+          color: var(--color-text);
+          font-family: 'bold';
+          text-align: start;
+          margin: 1rem 0;
+        }
+
+        span {
+          font-size: 1rem;
+          color: var(--color-pargraph);
+          font-family: 'regular';
+          text-align: start;
+          display: block;
+
+        }
+      }
+
+
+    }
+
+    // .swiper-slide-next {
+    //   box-shadow: -15px 30px 70px rgba($color: #abafc7, $alpha: 0.19);
+    //   background-color: var(--color-white);
+    //   border: 1px solid transparent;
+    //   transform: scale(1.09);
+    //   transition: 0.25s all ease-in-out;
+    // }
+
+    .swiper-pagination-bullet-active {
+      color: var(--color-primary);
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+//prenter sec
 // counter section
 .counter_section {
   padding: 2% 5%;
