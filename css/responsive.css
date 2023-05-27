@@ -247,9 +247,7 @@ height: 400px;
   .joinus .img {
     height: 400px;
   }
-  .joinus .content {
-    padding: 0% 3% 4%;
-  }
+  
   .joinus .content .button {
     margin-top: 3%;
   }
@@ -279,6 +277,31 @@ height: 400px;
   .package_type {
     height: 450px;
     margin-bottom: 5%;
+}
+.team_section.responsive{
+  display: block;
+}
+.team_section{
+  display: none;
+}
+.team_section .images{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: start;
+}
+.team_section .images img{
+  width: 30%;
+  margin-inline-end: 2%;
+  height: 200px;
+  margin-bottom: 2%;
+}
+.team_section  .button .first {
+width: 30%;
+padding: 1%;
+}
+.joinus .content {
+  padding: 0% 8% 4%;
 }
 }
 /* Extra small devices (phones, 767px and down) */
@@ -374,5 +397,53 @@ height: 400px;
     height: 405px;
 margin-bottom: 5%;
   }
- 
+.tab_teacher{
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.hero_section .tab_teacher .tab-content .card_teacher .img img{
+  width: 100%;
+}
+.hero_section .tab_teacher .tab-content .card_teacher .info{
+  width: 100%;
+}
+.why_section .join_us_why{
+    flex-direction: column;
+}
+.why_section .join_us_why .info{
+  width: 100%;
+}
+.printer_section .swiper .swiper-slide {
+  align-items: center;
+}
+.printer_section .swiper .swiper-slide .pranter_card .title{
+  text-align: center;
+}
+.printer_section .swiper .swiper-slide .pranter_card span{
+  text-align: center;
+}
+.sec_title span{
+  width: 100%;
+  margin-bottom: 3%;
+}
+.xyz{
+  display: flex;
+  justify-content: space-between;
+}
+.team_section .second, .team_section .third{
+  width: 45%;
+}
+.team_section .first_im, .team_section .fourth{
+  width: 45%;
+}
+.team_section .images img{
+  width: 45%;
+  margin-inline-end: 5%;
+  height: 250px;
+  margin-bottom: 5%;
+}
+.navbar .navbar-collapse .dropdown .dropdown-toggle{
+  margin: auto;
+}
 }
