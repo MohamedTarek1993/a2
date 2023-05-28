@@ -4,6 +4,9 @@
   .package_type {
     height: 433px;
   }
+  .joinus .row{
+    width: 100%;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 1024.98px) {

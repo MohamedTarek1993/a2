@@ -1267,7 +1267,9 @@ input {
 .joinus {
   position: relative;
   background-color: #E6AB2F;
-
+.container-fluid{
+  padding: 0;
+}
   .img {
     width: 100%;
     height: 100%;
